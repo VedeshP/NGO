@@ -28,6 +28,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 DB_URL = os.getenv('DB_URL')
 
 app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///instance/ekprayas.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)   
 
